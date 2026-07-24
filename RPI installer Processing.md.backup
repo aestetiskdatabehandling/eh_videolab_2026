@@ -109,6 +109,3 @@ sudo nano /etc/xdg/lxsession/rpd-x/autostart
 
 tilføj følgende linje i dokumentet via  ```nano```:<br> 
 ```@unclutter -idle 0.1 -root```
-
-<kbd>CTRL+S</kbd> for at gemme <br>
-<kbd>CTRL+X</kbd> for at lukke ```nano```

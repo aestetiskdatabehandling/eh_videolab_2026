@@ -34,4 +34,5 @@ Klik netværksikonet i menuen øverst til højre og log på netværket. OBS: Må
 ```
 sudo apt update 
 sudo apt upgrade
-```
+``` 
+```update``
