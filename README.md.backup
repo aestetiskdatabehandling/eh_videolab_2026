@@ -11,7 +11,7 @@ Kurset er baseret på en Raspberry Pi 4, med 4 eller 8 GB RAM.
 |Materiale| Indhold|
 |-|-|
 |RPI installer Raspberry Pi OS.md| Trin-for-trin guide|
-|RPI installer processing.md | Trin-for-trin guide|
-|RPI terminal cheat sheet.md| Guide til brug af Terminalen i Linux. Indeholder liste over nyttige funktioner |
-|RPI parlør.md| Forklaringer af diverse ord og udtryk ifbm Linux og Raspberry Pi|
-|RPI noter.md| Marius' løse noter
+|[Installer Processing]([link](https://github.com/aestetiskdatabehandling/eh_videolab_2026/blob/main/RPI%20installer%20Processing.md)) | Trin-for-trin guide|
+|RPI terminal cheat sheet.m| Guide til brug af Terminalen i Linux. Indeholder liste over nyttige funktioner |
+|Raspberry Pi parlør| Forklaringer af diverse ord og udtryk ifbm Linux og Raspberry Pi|
+|Raspberry Pi noter| Marius' noter
