@@ -30,6 +30,7 @@
 |SoC|Soldered-on-Chip, udtryk for komponenter der er loddet fast på printpladen|
 |USB|Universal Serial Bus, en protokol til overførsel af data|
 |Wayland|Linux-baseret window manager|
+|wget|Værktøj, meget lig ```curl```
 |X11|Linux-baseret window manager|
 
 ### Fil-endelser

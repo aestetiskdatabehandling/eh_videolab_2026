@@ -10,16 +10,41 @@ sudo apt install snapd
 ```
 
 ### Installer Processing via snap
+
+>NB! Der er problemer med den seneste udgave af Processing (version 4.5.6) og librariet TheMidiBus. En del af løsningen er at installere en ældre udgave af Processing, version 4.4.4
+
+#### Download Processing 4.4.4 fra GitHub
+Brug ```wget``` til at downloade den rigtige udgave af Processing til ```/Downloads```
+
+```
+wget https://github.com/processing/processing4/releases/download/processing-1304-4.4.4/processing-4.4.4-linux-aarch64.snap
+```
+
+Herefter navigerer du til ```/Downloads``` og installerer processing fra den fil du har hentet.
+
+```
+cd Downloads
+sudo snap install --dangerous processing-1304-4.4.4/processing-4.4.4-linux-aarch64.snap --classic
+```
+
+```--dangerous``` = vi vil installere noget der ikke er en del af den seneste officielle *snap package* <br>
+```--classic```= vi vil installere et program med alle tilladelser til systemet
+
+#### Hvis fremtiden er lysere
+Hvis det skulle ske at problemerne med TheMidibus bliver løst i en fremtidig udgave af Processing, kan du hente den seneste udgave af Processing med ```snap``` i stedet for alt bøvlet ovenfor.
+
 ```
 sudo snap install processing --classic
 ```
-
 
 ## Lav en Processing sketch
 Åbn Processing IDE og skriv følgende som en test:
 ```
 void settings() {
 	fullScreen();
+}
+
+void setup() {
 	rectMode(CENTER);
 }
 
@@ -28,7 +53,7 @@ void draw() {
 	fill(255);
 	translate(width/2, height/2);
 	rotate(millis()*0.01);
-	rect(200, 200, 0,0);
+	rect(0, 0, 200,200);
 }
 ```
 
@@ -63,7 +88,7 @@ Første gang du bruger denne kommando vil Terminalen spørge hvilken *editor* du
 
 tilføj linje:<br>
 ```
-@reboot sleep 15 \&\& DISPLAY=:0 XDG\_RUNTIME\_DIR=run/user/1000 /snap/bin/processing cli --sketch=/home/mjn/sketchbook/circle --run
+@reboot sleep 15 && DISPLAY=:0 XDG/RUNTIME/DIR=run/user/1000 /snap/bin/processing cli --sketch=/home/mjn/sketchbook/circle --run
 ```
 
 <kbd>CTRL+S</kbd> for at gemme <br>
