@@ -1,2 +1,17 @@
 # eh_videolab_2026
-Læringsmateriale til Videolab 2026 på Engelsholm Højskole
+Læringsmateriale til Videolab 2026 på Engelsholm Højskole 25/7 - 30/7 2026
+
+Dette er materialet brugt ved det korte kursus Videolab 2026. Kursets formål er at blive fortrolig med Raspberry Pi 4 og Processing, for at lave små selvkørende kunstinstallationer.
+
+Kurset er baseret på en Raspberry Pi 4, med 4 eller 8 GB RAM.
+
+
+## Indhold
+
+|Materiale| Indhold|
+|-|-|
+|Installer Raspberry Pi OS Trixie| Trin-for-trin guide|
+|[Installer Processing]([link](https://github.com/aestetiskdatabehandling/eh_videolab_2026/blob/main/RPI%20installer%20Processing.md)) | Trin-for-trin guide|
+|Raspberry Pi Terminal Cheat Sheet| Guide til brug af Terminalen i Linux. Indeholder liste over nyttige funktioner |
+|Raspberry Pi parlør| Forklaringer af diverse ord og udtryk ifbm Linux og Raspberry Pi|
+|Raspberry Pi noter| Marius' noter
