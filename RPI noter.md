@@ -61,3 +61,31 @@ https://pypi.org/project/processing-py/#description
 
 ### Pi4J
 https://www.pi4j.com
+
+### cron
+*cron* er en indbygget service på Linux systemer der kan starte processer når computeren tænder. *cron* bruger et *cron table*, en tekstfil, til at finde ud af hvad brugeren ønsker der skal ske.
+Åbn tekstfilen i Terminalen:
+
+```
+crontab -e
+```
+
+Første gang du bruger denne kommando vil Terminalen spørge hvilken *editor* du vil bruge. Vælg **1** og godkend, for at bruge ```nano```, en indbygget super simpel tekst editor direkte i Terminalen.
+
+tilføj linje:<br>
+```
+@reboot sleep 15 && DISPLAY=:0 XDG/RUNTIME/DIR=run/user/1000 /snap/bin/processing cli --sketch=/home/mjn/sketchbook/circle --run
+```
+
+<kbd>CTRL+S</kbd> for at gemme <br>
+<kbd>CTRL+X</kbd> for at lukke ```nano```
+
+Forklaring af linjerne:
+
+```@reboot``` kør de følgende kommandoer når computeren tænder<br>
+```sleep 15``` vent 15 sekunder<br>
+```&&``` tilføj endnu en kommando<br>
+```DISPLAY=:0 ``` åbn program på display 0 <br>
+```XDG_RUNTIME_DIR=run/user/1000 ``` indstillinger der sørger for at computeren må køre de næste kommandoer<br>
+```/snap/bin/processing cli``` brug Processing i command line interface mode <br>
+```--sketch=/home/mjn/sketchbook/circle --run``` åbn sketchen <br>

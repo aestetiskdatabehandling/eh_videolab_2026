@@ -7,6 +7,8 @@ Raspberry Pi OS udkommer med en ny version med et par års mellemrum. Den senest
 
 ### Installer Raspberry Pi Imager
 
+https://www.raspberrypi.com/software/
+
 Styresystemet skal installeres direkte på MicroSD kortet som sidder i Raspberry Pi'en. Man skal hente <i>Raspberry Pi Imager</i> til både Windows og MacOS, og bruge dette program til at <i>flashe</i> sit MicroSD kort med den rigtige version af Raspberry Pi OS.
 Der er mange muligheder for at vælge forskellige systemer til sin Raspberry Pi; fx en uden Desktop (altså uden grafisk brugerflade) eller et styresystem som er specifikt til fx et mediecenter. Raspberry Pi Imager gør det hele ret gnidningsfrit. Vi skal bruge følgende indstillinger: <br>
 
@@ -17,7 +19,7 @@ Der er mange muligheder for at vælge forskellige systemer til sin Raspberry Pi;
 - **Hostname:** Navnet på din Raspberry Pi. Vælg noget kort som fx <i>rpi</i>; du må kun bruge små (engelske) bogstaver, tal og bindestreger.<br>
 - **Localisation:** Sæt tiden til København, keyboard layout til *dk*
 - **User** Vælg dit brugernavn, fx initialer. Samme regler som for hostname.
-- **Password** Vælg kodeord - eller lad være!
+- **Password** Vælg et kodeord
 - **Choose WI-FI:** Hvis du kan det rigtige navn og kodeord til det netværk din Pi skal logge på, kan du skrive det her. For nu; spring over
 - **Remote Access / SSH Configuration** SSH er en protokol til at styre computere via netværk. Spring over.
 - **Raspberry Pi Connect** Raspberry Pi's egen protokol for at styre computere via Internet. Sikkert smart; spring over.<br>
